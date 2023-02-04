@@ -11,7 +11,7 @@
     "https"
   ],
   "paths": {
-    "/books/": {
+    "/children/": {
       "get": {
         "description": "",
         "produces": [
