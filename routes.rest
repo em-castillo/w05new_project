@@ -20,7 +20,7 @@ https://childrens-books.onrender.com/children/63ddea374a0a407f459d7f5e
 
 // POST
 ###
-POST http://localhost:8080/children HTTP/1.1
+POST http://localhost:8080/children/ HTTP/1.1
 content-type: application/json
 
 {
@@ -56,7 +56,7 @@ DELETE http://localhost:8080/children/ HTTP/1.1
 // RENDER LINKS
 // POST
 ###
-POST https://childrens-books.onrender.com/children HTTP/1.1
+POST https://childrens-books.onrender.com/children/ HTTP/1.1
 content-type: application/json
 
 {
@@ -71,7 +71,7 @@ content-type: application/json
 
 // PUT
 ### 
-PUT https://books-e9vu.onrender.com/contacts/63c1b52c4a0a407f459d7f54 HTTP/1.1
+PUT https://childrens-books.onrender.com/children/ HTTP/1.1
 content-type: application/json
 
 {
