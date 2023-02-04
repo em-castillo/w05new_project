@@ -7,7 +7,7 @@ const doc = {
     description: 'books',
   },
   // match port from render this time including https
-  host: 'books-e9vu.onrender.com',
+  host: 'childrens-books.onrender.com',
   schemes: ['https'],
 };
 

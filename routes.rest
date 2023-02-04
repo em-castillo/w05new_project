@@ -1,15 +1,18 @@
 // LOCALHOST GET
 GET http://localhost:8080/children 
-GET http://localhost:8080/children/63c1b52c4a0a407f459d7f52
-GET http://localhost:8080/children/63c1b52c4a0a407f459d7f53
-GET http://localhost:8080/children/63c1b52c4a0a407f459d7f54
+GET http://localhost:8080/children/63ddea374a0a407f459d7f5b
+GET http://localhost:8080/children/63ddea374a0a407f459d7f5c
+GET http://localhost:8080/children/63ddea374a0a407f459d7f5d
+GET http://localhost:8080/children/63ddea374a0a407f459d7f5e
 
 
 // RENDER LINKS
-https://books-e9vu.onrender.com/children
-https://books-e9vu.onrender.com/children/63c1b52c4a0a407f459d7f52
-https://books-e9vu.onrender.com/children/63c1b52c4a0a407f459d7f53
-https://books-e9vu.onrender.com/children/63c1b52c4a0a407f459d7f54
+https://childrens-books.onrender.com/children
+https://childrens-books.onrender.com/children/63ddea374a0a407f459d7f5b
+https://childrens-books.onrender.com/children/63ddea374a0a407f459d7f5c
+https://childrens-books.onrender.com/children/63ddea374a0a407f459d7f5d
+https://childrens-books.onrender.com/children/63ddea374a0a407f459d7f5e
+
 
 // POST
 ###
@@ -49,7 +52,7 @@ DELETE http://localhost:8080/children/ HTTP/1.1
 // RENDER LINKS
 // POST
 ###
-POST https://books-e9vu.onrender.com/contacts HTTP/1.1
+POST https://childrens-books.onrender.com/children HTTP/1.1
 content-type: application/json
 
 {
@@ -79,4 +82,4 @@ content-type: application/json
 
 // DELETE (update id if another contact to delete was created
 ###
-DELETE https://books-e9vu.onrender.com/children/ HTTP/1.1
+DELETE https://childrens-books.onrender.com/children/ HTTP/1.1
