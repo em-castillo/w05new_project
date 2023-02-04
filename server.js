@@ -6,17 +6,17 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 // express setup
-const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('./swagger.json');
+// const swaggerUi = require('swagger-ui-express');
+// const swaggerDocument = require('./swagger.json');
 
 app
-.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument)) // express setup
+// .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument)) // express setup
   .use(bodyParser.json())
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Z-Key');
-    res.setHeader('Content-Type', 'appication/json');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS');
+    // res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Z-Key');
+    // res.setHeader('Content-Type', 'appication/json');
+    // res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS');
     next();
   })
   .use('/', require('./routes'));
