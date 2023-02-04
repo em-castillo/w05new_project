@@ -1,0 +1,38 @@
+{
+    "book1": {
+      "title": "You're My Little Cuddle Bug",
+      "year": "2018",
+      "author": "Nicola Edwards",
+      "illustrator": "Natalie Marshall",
+      "category": "Children's Bug & Spider Books",
+      "description": "Celebrate your little cuddle bug with this sweet and colorful rhyming board book! With chunky pages for little hands and die-cut cuddle bugs to add depth and interest, children will love the interactive features alongside the story.",
+      "awards": "2020 Publishers Weekly Bestseller, National Bestselling title (USA Today), National Bestselling series, 2018 National Parenting Product Awards Winner."
+    },
+    "book2": {
+        "title": "I Love You Like No Otter",
+        "year": "2020",
+        "author": "Rose Rossner",
+        "illustrator": "Sydney Hanson",
+        "category": "Children's Baby Animal Books",
+        "description": "There's no better way to say 'I love you' than with a sweet and heartfelt animal pun book! I Love You Like No Otter combines a warm message of love with beautifully illustrated animals families will love to read and share together. From baby shower gifts for new parents to bedtime read alouds all year long, this adorable board book is purrfect for anyone you love beary much!",
+        "awards": "USA Today bestseller."
+    },
+    "book3": {
+        "title": "The Wonderful Things You Will Be",
+        "year": "2015",
+        "author": "Emily Winfield Martin",
+        "illustrator": "Emily Winfield Martin",
+        "category": "Children's Sleep Issues",
+        "description": "From brave and bold to creative and clever, Emily Winfield Martin's rhythmic rhyme expresses all the loving things that parents think of when they look at their children. With beautiful, lush illustrations and a stunning gatefold that opens at the end, this is a book that families will love reading over and over.",
+        "awards": "New York Times bestseller."
+    },
+    "book4": {
+        "title": "Dragons Love Tacos",
+        "year": "2012",
+        "author": "Adam Rubin",
+        "illustrator": "Daniel Salmieri",
+        "category": "Children's Spine-Chilling Horror",
+        "description": "Dragons love tacos. They love chicken tacos, beef tacos, great big tacos, and teeny tiny tacos. So if you want to lure a bunch of dragons to your party, you should definitely serve tacos. Buckets and buckets of tacos. Unfortunately, where there are tacos, there is also salsa. And if a dragon accidentally eats spicy salsa . . . oh, boy. You're in red-hot trouble.",
+        "awards": "New York Times bestseller."
+    }
+  }

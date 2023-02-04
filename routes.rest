@@ -1,0 +1,82 @@
+// LOCALHOST GET
+GET http://localhost:8080/children 
+GET http://localhost:8080/children/63c1b52c4a0a407f459d7f52
+GET http://localhost:8080/children/63c1b52c4a0a407f459d7f53
+GET http://localhost:8080/children/63c1b52c4a0a407f459d7f54
+
+
+// RENDER LINKS
+https://books-e9vu.onrender.com/children
+https://books-e9vu.onrender.com/children/63c1b52c4a0a407f459d7f52
+https://books-e9vu.onrender.com/children/63c1b52c4a0a407f459d7f53
+https://books-e9vu.onrender.com/children/63c1b52c4a0a407f459d7f54
+
+// POST
+###
+POST http://localhost:8080/children HTTP/1.1
+content-type: application/json
+
+{
+        "title": "Fear the Bunny",
+        "year": "2019",
+        "author": "Richard T. Morris",
+        "illustrator": "Priscilla Burris",
+        "category": "Children's Lion, Tiger, & Leopard Books",
+        "description": "Tigers may be the most feared animal in some forests, but in this one, they fear the bunny. One hapless tiger finds this idea preposterous—what are they going to do? Nibble on his tail? Bop him on the head? Cute him to death? Fear the bunny—HA! Make no mistake, though: Richard Morris’ reimagining of William Blake’s famous poem turns the tables, and teaches one testy tiger a little rabbit-respect!",
+        "awards": "USA Today bestseller."
+    }
+
+// PUT
+###
+PUT http://localhost:8080/children/ HTTP/1.1
+content-type: application/json
+
+{
+        "title": "Fear the Bunny",
+        "year": "2019",
+        "author": "Richard T. Morris",
+        "illustrator": "Priscilla Burris",
+        "category": "Children's Lion, Tiger, & Leopard Books",
+        "description": "Tigers may be the most feared animal in some forests, but in this one, they fear the bunny. One hapless tiger finds this idea preposterous—what are they going to do? Nibble on his tail? Bop him on the head? Cute him to death? Fear the bunny—HA! Make no mistake, though: Richard Morris’ reimagining of William Blake’s famous poem turns the tables, and teaches one testy tiger a little rabbit-respect!",
+        "awards": "New York Times bestseller."
+    }
+
+// DELETE
+###
+DELETE http://localhost:8080/children/ HTTP/1.1
+
+
+// RENDER LINKS
+// POST
+###
+POST https://books-e9vu.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+        "title": "Fear the Bunny",
+        "year": "2019",
+        "author": "Richard T. Morris",
+        "illustrator": "Priscilla Burris",
+        "category": "Children's Lion, Tiger, & Leopard Books",
+        "description": "Tigers may be the most feared animal in some forests, but in this one, they fear the bunny. One hapless tiger finds this idea preposterous—what are they going to do? Nibble on his tail? Bop him on the head? Cute him to death? Fear the bunny—HA! Make no mistake, though: Richard Morris’ reimagining of William Blake’s famous poem turns the tables, and teaches one testy tiger a little rabbit-respect!",
+        "awards": "USA Today bestseller."
+    }
+
+// PUT
+### 
+PUT https://books-e9vu.onrender.com/contacts/63c1b52c4a0a407f459d7f54 HTTP/1.1
+content-type: application/json
+
+{
+        "title": "Fear the Bunny",
+        "year": "2019",
+        "author": "Richard T. Morris",
+        "illustrator": "Priscilla Burris",
+        "category": "Children's Lion, Tiger, & Leopard Books",
+        "description": "Tigers may be the most feared animal in some forests, but in this one, they fear the bunny. One hapless tiger finds this idea preposterous—what are they going to do? Nibble on his tail? Bop him on the head? Cute him to death? Fear the bunny—HA! Make no mistake, though: Richard Morris’ reimagining of William Blake’s famous poem turns the tables, and teaches one testy tiger a little rabbit-respect!",
+        "awards": "New York Times bestseller."
+    }
+
+// DELETE (update id if another contact to delete was created
+###
+DELETE https://books-e9vu.onrender.com/children/ HTTP/1.1
