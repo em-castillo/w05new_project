@@ -2,10 +2,10 @@
   "swagger": "2.0",
   "info": {
     "title": "My API Children Books",
-    "description": "books",
+    "description": "children",
     "version": "1.0.0"
   },
-  "host": "lesson-02.onrender.com",
+  "host": "childrens-books.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
