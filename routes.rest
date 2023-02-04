@@ -7,7 +7,7 @@ GET http://localhost:8080/children/63ddea374a0a407f459d7f5c
 ###
 GET http://localhost:8080/children/63ddea374a0a407f459d7f5d
 ###
-GET http://localhost:8080/children/63ddea374a0a407f459d7f5e
+GET http://localhost:8080/children/63de988fab6d564382a968ae
 
 
 // RENDER LINKS
@@ -15,12 +15,12 @@ https://childrens-books.onrender.com/children
 https://childrens-books.onrender.com/children/63ddea374a0a407f459d7f5b
 https://childrens-books.onrender.com/children/63ddea374a0a407f459d7f5c
 https://childrens-books.onrender.com/children/63ddea374a0a407f459d7f5d
-https://childrens-books.onrender.com/children/63ddea374a0a407f459d7f5e
+https://childrens-books.onrender.com/children/63de988fab6d564382a968ae
 
 
 // POST
 ###
-POST http://localhost:8080/children/ HTTP/1.1
+POST http://localhost:8080/children HTTP/1.1
 content-type: application/json
 
 {
@@ -35,7 +35,7 @@ content-type: application/json
 
 // PUT
 ###
-PUT http://localhost:8080/children/ HTTP/1.1
+PUT http://localhost:8080/children/63de9dfaab6d564382a968b0 HTTP/1.1
 content-type: application/json
 
 {
@@ -50,13 +50,13 @@ content-type: application/json
 
 // DELETE
 ###
-DELETE http://localhost:8080/children/ HTTP/1.1
+DELETE http://localhost:8080/children/63de9dfaab6d564382a968b0 HTTP/1.1
 
 
 // RENDER LINKS
 // POST
 ###
-POST https://childrens-books.onrender.com/children/ HTTP/1.1
+POST https://childrens-books.onrender.com/children HTTP/1.1
 content-type: application/json
 
 {
@@ -71,7 +71,7 @@ content-type: application/json
 
 // PUT
 ### 
-PUT https://childrens-books.onrender.com/children/ HTTP/1.1
+PUT https://childrens-books.onrender.com/children/63de9dfaab6d564382a968b0 HTTP/1.1
 content-type: application/json
 
 {
@@ -86,4 +86,4 @@ content-type: application/json
 
 // DELETE (update id if another contact to delete was created
 ###
-DELETE https://childrens-books.onrender.com/children/ HTTP/1.1
+DELETE https://childrens-books.onrender.com/children/63de9dfaab6d564382a968b0 HTTP/1.1
