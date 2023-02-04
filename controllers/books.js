@@ -21,7 +21,7 @@ const getAll = async (req, res) => {
 const getSingle = async (req, res) => {
   try{
   const userId = new ObjectId(req.params.id);
-  const result = await mongodb.getDb().db().collection('books').find({ _id: userId });
+  const result = await mongodb.getDb().db().collection('children').find({ _id: userId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     // 200 - every has gone according to plan

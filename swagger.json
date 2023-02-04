@@ -71,7 +71,7 @@
         }
       }
     },
-    "/books/{id}": {
+    "/children/{id}": {
       "get": {
         "description": "",
         "produces": [
