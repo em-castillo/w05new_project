@@ -19,6 +19,10 @@ const getAll = async (req, res) => {
 // GET request returns a SINGLE document in children collection
 // where an ID matches the ID from a query parameter.
 const getSingle = async (req, res) => {
+  // validate id
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Use a valid book id to find a book.');
+  }
   try{
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('children').find({ _id: userId });
@@ -58,6 +62,10 @@ const createBook = async (req, res) => {
 
 // PUT - updates a children book
 const updateBook = async (req, res) => {
+  // validate id
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Use a valid book id to find a book.');
+  }
   try{
   const userId = new ObjectId(req.params.id);
   const childrenBook = {
@@ -83,6 +91,10 @@ const updateBook = async (req, res) => {
 
 // DELETE - delete a children book
 const deleteBook = async (req, res) => {
+  // validate id
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Use a valid book id to find a book.');
+  }
   try{
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('children').deleteOne({ _id: userId }, true);

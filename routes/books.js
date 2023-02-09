@@ -1,6 +1,8 @@
 const express = require('express');
 
 const contactsController = require('../controllers/books');
+//validation
+const validation = require('../middleware/validate');
 
 const router = express.Router();
 
@@ -12,9 +14,9 @@ router.get('/:id', contactsController.getSingle);
 
 
 // POST request
-router.post('/', contactsController.createBook);
+router.post('/', validation.saveBook, contactsController.createBook);
 // PUT request/ uses id to be specific and don't mess up info
-router.put('/:id', contactsController.updateBook);
+router.put('/:id', validation.saveBook, contactsController.updateBook);
 // DELETE request/ uses id to be specific
 router.delete('/:id', contactsController.deleteBook);
 
