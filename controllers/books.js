@@ -56,7 +56,7 @@ const createBook = async (req, res) => {
     res.status(201).json(result);
   }
 } catch (err){
-  res.status(500).json({message: err.message});
+  res.status(500).json({message: err.message} || 'An error occurred.');
 }
 };
 
@@ -85,7 +85,7 @@ const updateBook = async (req, res) => {
     res.status(204).send();
   }
 } catch (err){
-  res.status(500).json({message: err.message});
+  res.status(500).json({message: err.message} || 'An error occurred.');
 }
 };
 
@@ -104,7 +104,7 @@ const deleteBook = async (req, res) => {
     res.status(200).send();
   }
 } catch (err){
-  res.status(500).json({message: err.message});
+  res.status(500).json({message: err.message} || 'An error occurred.');
 }
 };
 
