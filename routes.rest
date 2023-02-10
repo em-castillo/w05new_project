@@ -87,3 +87,4 @@ content-type: application/json
 // DELETE (update id if another contact to delete was created
 ###
 DELETE https://childrens-books.onrender.com/children/63de9dfaab6d564382a968b0 HTTP/1.1
+content-type: application/json
