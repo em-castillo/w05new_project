@@ -101,7 +101,7 @@ const deleteBook = async (req, res) => {
   // deleteCount - return field that checks for deleted data
   if (result.deleteCount > 0) {
     // 200 - The request succeeded. The result meaning of "success" depends on the HTTP method
-    res.status(200).send();
+    res.status(204).send();
   }
 } catch (err){
   res.status(500).json({message: err.message} || 'An error occurred.');
