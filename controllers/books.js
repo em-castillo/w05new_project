@@ -99,7 +99,7 @@ const deleteBook = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('children').deleteOne({ _id: userId }, true);
   // deleteCount - return field that checks for deleted data
-  if (result.deleteCount > 0) {
+  if (result.deletedCount > 0) {
     // 200 - The request succeeded. The result meaning of "success" depends on the HTTP method
     res.status(200).send();
   }
