@@ -5,10 +5,10 @@
     "description": "children",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "childrens-books.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/children/": {

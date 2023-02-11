@@ -7,8 +7,8 @@ const doc = {
     description: 'books',
   },
   // match port from render this time including https
-  host: 'localhost:8080',
-  schemes: ['http'],
+  host: 'childrens-books.onrender.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
