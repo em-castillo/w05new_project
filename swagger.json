@@ -5,7 +5,7 @@
     "description": "children",
     "version": "1.0.0"
   },
-  "host": "childrens-books.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "tags": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/children/": {
@@ -198,13 +198,7 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
-                  "example": "any"
-                },
-                "lastName": {
-                  "example": "any"
-                },
-                "email": {
+                "username": {
                   "example": "any"
                 },
                 "password": {
@@ -262,13 +256,7 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
-                  "example": "any"
-                },
-                "lastName": {
-                  "example": "any"
-                },
-                "email": {
+                "username": {
                   "example": "any"
                 },
                 "password": {

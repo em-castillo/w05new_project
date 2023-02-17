@@ -34,9 +34,7 @@ const saveBook = (req, res, next) => {
 const saveUser = (req, res, next) => {
   //must have info - rules
 const validationRule2 = {
-  firstName: 'required|string',
-  lastName: 'required|string',
-  email: 'required|email',
+  username: 'required|string',
   password: 'required|string' 
 };
 //validation

@@ -16,7 +16,7 @@ app
   })
   .use('/', require('./routes'));
 
-// // express setup
+// express setup
 // const swaggerUi = require('swagger-ui-express');
 // const swaggerDocument = require('./swagger.json');
 

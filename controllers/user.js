@@ -1,6 +1,7 @@
 // CHECK ID -> username
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId; // getSingle
+// const User = mongodb.user;
 
 // GET request returns ALL users
 const getAll = async (req, res) => {
@@ -40,9 +41,7 @@ const getSingle = async (req, res) => {
 const createUser = async (req, res) => {
   try{
   const userInfo = {
-    firstName: req.body.firstName,
-    lastName: req.body.lastName,
-    email: req.body.email,
+    username: req.body.username,
     password: req.body.password
   };
   const result = await mongodb.getDb().db().collection('user').insertOne(userInfo);
@@ -66,9 +65,7 @@ const updateUser = async (req, res) => {
   try{
   const userId = new ObjectId(req.params.id);
   const userInfo = {
-    firstName: req.body.firstName,
-    lastName: req.body.lastName,
-    email: req.body.email,
+    username: req.body.username,
     password: req.body.password
   };
   // updateOne() is used to update a single entry matching a given specified filter
