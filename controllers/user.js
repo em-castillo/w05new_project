@@ -1,7 +1,7 @@
 // CHECK ID -> username
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId; // getSingle
-// const User = mongodb.user;
+
 
 // GET request returns ALL users
 const getAll = async (req, res) => {
@@ -22,7 +22,7 @@ const getAll = async (req, res) => {
 const getSingle = async (req, res) => {
   // validate id
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Use a valid username.');
+    res.status(400).json('Use a valid username id.');
   }
   try{
   const userId = new ObjectId(req.params.id);
@@ -60,7 +60,7 @@ const createUser = async (req, res) => {
 const updateUser = async (req, res) => {
   // validate id
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Use a valid username.');
+    res.status(400).json('Use a valid username id.');
   }
   try{
   const userId = new ObjectId(req.params.id);
@@ -84,7 +84,7 @@ const updateUser = async (req, res) => {
 const deleteUser = async (req, res) => {
   // validate id
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Use a valid username.');
+    res.status(400).json('Use a valid username id.');
   }
   try{
   const userId = new ObjectId(req.params.id);

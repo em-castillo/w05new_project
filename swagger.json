@@ -2,27 +2,28 @@
   "swagger": "2.0",
   "info": {
     "title": "My API Children Books",
-    "description": "children",
+    "description": "Information about children books and users.",
     "version": "1.0.0"
   },
   "host": "localhost:8080",
   "basePath": "/",
   "tags": [
     {
-      "name": "Children's Books",
+      "name": "books",
       "description": ""
     },
     {
-      "name": "User",
+      "name": "users",
       "description": ""
     }
   ],
   "schemes": [
-    "http"
+    "http", "https"
   ],
   "paths": {
     "/children/": {
       "get": {
+        "tags": ["books"],
         "description": "",
         "produces": [
           "application/json"
@@ -38,6 +39,7 @@
         }
       },
       "post": {
+        "tags": ["books"],
         "description": "",
         "parameters": [
           {
@@ -83,6 +85,7 @@
     },
     "/children/{id}": {
       "get": {
+        "tags": ["books"],
         "description": "",
         "produces": [
           "application/json"
@@ -105,6 +108,7 @@
         }
       },
       "put": {
+        "tags": ["books"],
         "description": "",
         "parameters": [
           {
@@ -154,6 +158,7 @@
         }
       },
       "delete": {
+        "tags": ["books"],
         "description": "",
         "parameters": [
           {
@@ -175,6 +180,7 @@
     },
     "/user/": {
       "get": {
+        "tags": ["users"],
         "description": "",
         "produces": [
           "application/json"
@@ -190,6 +196,7 @@
         }
       },
       "post": {
+        "tags": ["users"],
         "description": "",
         "parameters": [
           {
@@ -220,6 +227,7 @@
     },
     "/user/{id}": {
       "get": {
+        "tags": ["users"],
         "description": "",
         "produces": [
           "application/json"
@@ -242,6 +250,7 @@
         }
       },
       "put": {
+        "tags": ["users"],
         "description": "",
         "parameters": [
           {
@@ -276,6 +285,7 @@
         }
       },
       "delete": {
+        "tags": ["users"],
         "description": "",
         "parameters": [
           {
