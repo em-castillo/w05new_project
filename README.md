@@ -4,6 +4,7 @@ API about children's books and users.
 
 Working with:
 - REST API
+- HTTP methods
 - Validation
 - Handling errors
 - Swagger
