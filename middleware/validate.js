@@ -1,5 +1,7 @@
+//CHECK PASSWORD
 const validator = require('../helper/validate');
 
+// BOOK
 const saveBook = (req, res, next) => {
     //must have info - rules
   const validationRule = {
@@ -28,6 +30,33 @@ const saveBook = (req, res, next) => {
   });
 };
 
+//USER
+const saveUser = (req, res, next) => {
+  //must have info - rules
+const validationRule2 = {
+  firstName: 'required|string',
+  lastName: 'required|string',
+  email: 'required|email',
+  password: 'required|string' 
+};
+//validation
+validator(req.body, validationRule2, {}, (err, status) => {
+  // if fails
+  if (!status) {
+    res.status(412).send({
+      success: false,
+      message: 'Validation failed',
+      data: err
+    });
+  } 
+  // if succeeds
+  else {
+    next();
+  }
+});
+};
+
+
 module.exports = {
-  saveBook
+  saveBook, saveUser
 };
