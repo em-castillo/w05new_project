@@ -1,5 +1,6 @@
-# w05new_project
-CSE 341 Project #2 
+# CSE 341 Project #2 
+
+API about children books and users.
 
 Working with:
 - REST API
