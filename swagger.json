@@ -7,6 +7,16 @@
   },
   "host": "childrens-books.onrender.com",
   "basePath": "/",
+  "tags": [
+    {
+      "name": "Children's Books",
+      "description": ""
+    },
+    {
+      "name": "User",
+      "description": ""
+    }
+  ],
   "schemes": [
     "https"
   ],
