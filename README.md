@@ -1,6 +1,6 @@
 # CSE 341 Project #2 
 
-API about children books and users.
+API about children's books and users.
 
 Working with:
 - REST API
