@@ -7,8 +7,8 @@ const doc = {
     description: 'books',
   },
   // match port from render this time including https
-  //host: 'childrens-books.onrender.com',
-  host: 'localhost:8080',
+  host: 'childrens-books.onrender.com',
+  // host: 'localhost:8080',
   schemes: ['http', 'https'],
 };
 
