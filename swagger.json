@@ -5,7 +5,7 @@
     "description": "Information about children's books and users.",
     "version": "1.0.0"
   },
-  "host": "childrens-books.onrender.com/api-docs",
+  "host": "childrens-books.onrender.com",
   "basePath": "/",
   "tags": [
     {
