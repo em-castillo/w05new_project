@@ -33,25 +33,25 @@ const saveBook = (req, res, next) => {
 //USER
 const saveUser = (req, res, next) => {
   //must have info - rules
-const validationRule2 = {
-  username: 'required|string',
-  password: 'required|string' 
-};
+  const validationRule2 = {
+    username: 'required|string',
+    password: 'required|string' 
+  };
 //validation
-validator(req.body, validationRule2, {}, (err, status) => {
-  // if fails
-  if (!status) {
-    res.status(412).send({
-      success: false,
-      message: 'Validation failed',
-      data: err
-    });
-  } 
-  // if succeeds
-  else {
-    next();
-  }
-});
+  validator(req.body, validationRule2, {}, (err, status) => {
+    // if fails
+    if (!status) {
+      res.status(412).send({
+        success: false,
+        message: 'Validation failed',
+        data: err
+      });
+    } 
+    // if succeeds
+    else {
+      next();
+    }
+  });
 };
 
 

@@ -10,6 +10,17 @@ GET http://localhost:8080/children/63ddea374a0a407f459d7f5d
 GET http://localhost:8080/children/63de988fab6d564382a968ae
 
 
+###
+GET http://localhost:8080/user
+###
+GET http://localhost:8080/user/63fa94295234990100bb383e
+###
+GET http://localhost:8080/user/63fa94295234990100bb383f
+###
+GET http://localhost:8080/user/63fa94295234990100bb3840
+
+
+
 // RENDER LINKS
 https://childrens-books.onrender.com/children
 https://childrens-books.onrender.com/children/63ddea374a0a407f459d7f5b

@@ -23,8 +23,10 @@ const getSingle = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
     res.status(400).json('Use a valid book id to find a book.');
   }
+  console.log(ObjectId);
   try{
   const userId = new ObjectId(req.params.id);
+  console.log(userId);
   const result = await mongodb.getDb().db().collection('children').find({ _id: userId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');

@@ -10,15 +10,15 @@ const router = express.Router();
 // GET request returns ALL documents in user collection
 router.get('/', userController.getAll);
 // GET request returns a SINGLE document in user collection
-router.get('/:username', userController.getSingle);
+router.get('/:id', userController.getSingle);
 
 
 // POST request
 router.post('/', validation.saveUser, userController.createUser);
 // PUT request/ uses id to be specific and don't mess up info
-router.put('/:username', validation.saveUser, userController.updateUser);
+router.put('/:id', validation.saveUser, userController.updateUser);
 // DELETE request/ uses id to be specific
-router.delete('/:username', userController.deleteUser);
+router.delete('/:id', userController.deleteUser);
 
 
 module.exports = router;

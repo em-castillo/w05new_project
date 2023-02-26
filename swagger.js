@@ -8,8 +8,18 @@ const doc = {
   },
   // match port from render this time including https
   host: 'childrens-books.onrender.com',
-  //host: 'localhost:8080',
+  // host: 'localhost:8080',
   schemes: ['https'],
+  securityDefinitions: {
+    oAuthSample: {
+      type: 'oauth2',
+      authorizationUrl: 'https://childrens-books.onrender.com/api-docs',
+      flow: 'implicit',
+      scopes: {
+        write_books: ''
+      }
+    }
+  }
 };
 
 const outputFile = './swagger.json';
