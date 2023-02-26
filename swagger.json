@@ -180,22 +180,6 @@
       }
     },
     "/user/": {
-      "get": {
-        "tags": ["users"],
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      },
       "post": {
         "tags": ["users"],
         "description": "",
@@ -242,7 +226,7 @@
           },
           {
             "name": "password",
-            "in": "path",
+            "in": "query",
             "required": true,
             "type": "string"
           }
@@ -264,9 +248,7 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"

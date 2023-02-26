@@ -4,18 +4,46 @@ const ObjectId = require('mongodb').ObjectId; // getSingle
 
 
 // GET request returns ALL users
-const getAll = async (req, res) => {
-  // try and catch to avoid site to crash
+// const getAll = async (req, res) => {
+//   // try and catch to avoid site to crash
+//   try{
+//   const result = await mongodb.getDb().db().collection('user').find();
+//   result.toArray().then((lists) => {
+//     res.setHeader('Content-Type', 'application/json');
+//     // 200 - every has gone according to plan
+//     res.status(200).json(lists); // no index [0] because will show all)
+//   });
+// } catch (err){
+//   res.status(500).json({message: err.message});
+// }
+// };
+
+const login = async (req,res) => {
+  // validate id
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Use a valid username id.');
+  }
   try{
-  const result = await mongodb.getDb().db().collection('user').find();
+  const userId = new ObjectId(req.params.id);
+  const result = await mongodb.getDb().db().collection('user').find({ _id: userId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     // 200 - every has gone according to plan
-    res.status(200).json(lists); // no index [0] because will show all)
+    res.status(200).json(lists[0]);// only shows one
   });
 } catch (err){
   res.status(500).json({message: err.message});
 }
+};
+
+const logout = async (req,res) => {
+  try{
+    
+      res.status(200).send('Log out successful.');
+    
+  } catch (err){
+    res.status(500).json({message: err.message} || 'An error occurred.');
+  }
 };
 
 // GET request returns a SINGLE user
@@ -100,4 +128,4 @@ const deleteUser = async (req, res) => {
 };
 
 
-module.exports = { getAll, getSingle, createUser, updateUser, deleteUser };
+module.exports = { getSingle, createUser, updateUser, deleteUser, login, logout };

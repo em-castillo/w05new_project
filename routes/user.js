@@ -8,9 +8,12 @@ const router = express.Router();
 
 // GET collection(s)
 // GET request returns ALL documents in user collection
-router.get('/', userController.getAll);
+// router.get('/', userController.getAll);
 // GET request returns a SINGLE document in user collection
 router.get('/:id', userController.getSingle);
+
+router.get('/:id', userController.login);
+router.get('/', userController.logout);
 
 
 // POST request

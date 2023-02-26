@@ -9,7 +9,7 @@ const doc = {
   // match port from render this time including https
   host: 'childrens-books.onrender.com',
   // host: 'localhost:8080',
-  schemes: ['https'],
+  schemes: ['http'],
   securityDefinitions: {
     oAuthSample: {
       type: 'oauth2',
