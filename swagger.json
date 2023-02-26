@@ -219,8 +219,8 @@
         ],
         "parameters": [
           {
-            "name": "id",
-            "in": "path",
+            "name": "username",
+            "in": "query",
             "required": true,
             "type": "string"
           },
@@ -349,6 +349,18 @@
         "post:books": "",
         "edit:books": "",
         "delete:books": ""
+      }
+    }
+  },
+  "Credentials": {
+    "type": "object",
+    "required": ["password", "username"],
+    "properties": {
+      "username": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
       }
     }
   }

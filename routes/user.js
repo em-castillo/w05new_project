@@ -12,8 +12,8 @@ const router = express.Router();
 // GET request returns a SINGLE document in user collection
 router.get('/:id', userController.getSingle);
 
-router.get('/:id', userController.login);
-router.get('/', userController.logout);
+// router.get('/:id', userController.login);
+// router.get('/', userController.logout);
 
 
 // POST request
